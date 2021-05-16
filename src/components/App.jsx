@@ -2,12 +2,12 @@
  import Card from "./Card";
  import contacts from "../contacts";
 
-function App(props) {
+function App() {
 
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-  
+      
       <Card 
         name = {contacts[0].name}
         img = {contacts[0].imgURL}
@@ -25,13 +25,23 @@ function App(props) {
       />
 
       <Card 
+        name = {contacts[2].name}
+        img = {contacts[2].imgURL}
+        tel = {contacts[2].phone}
+        email = {contacts[2].email}
+
+      />
+
+
+{/* 
+      <Card 
         name = "Chuck Noris"
         img = "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png"
         tel = "+123 333 789"
         email = "c@norise.com"
 
-      />
-
+      /> */}
+      
     </div>
   );
 
